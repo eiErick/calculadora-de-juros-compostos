@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +9,39 @@
     <title>Juros Compostos</title>
 </head>
 <body>
-    
+    <main id="container">
+        <div id="calculator">
+
+            <h2>Calculadora de Juros Compostos 🪙</h2>
+
+
+        <div id="input-box">
+            <div class="input-field">
+                <label for="value">Valor Inicial (capital):</label>
+                <p class="inf">R$ |</p><input type="number" name="num" id="value">
+            </div>
+            <div class="input-field">
+                <label for="fee">Taxa de Juros ao mês:</label>
+                <p class="inf">% |</p><input type="number" name="num" id="fee">
+            </div>
+            <div class="input-field">
+                <label for="time">Tempo de Rendimento ao mês:</label>
+                <p class="inf">Mês |</p><input type="number" name="num" id="time">
+            </div>
+        </div>
+
+            <div id="res">
+                <h4>Resultado:</h4>
+                <span id="total">R$ 0,00</span>
+            </div>
+
+            <div id="button">
+                <button class="button" id="cal">Calcular</button>
+                <!--<button class="button" id="lim">Limpar</button>-->
+            </div>
+
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
